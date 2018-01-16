@@ -225,7 +225,7 @@
     "relativePath": "Animacoes"
   },
   "3264c940-0da5-4fee-befe-188a8170db54": {
-    "asset": 1515675219944,
+    "asset": 1515758954169,
     "meta": 1512991334000,
     "relativePath": "Animacoes\\Inimigo"
   },
@@ -370,12 +370,12 @@
     "relativePath": "Imagens\\Tiro.png"
   },
   "b1b819d6-754e-4a9b-a9d2-8a24bff4c720": {
-    "asset": 1515773821280,
-    "meta": 1515773821316,
+    "asset": 1515777204736,
+    "meta": 1515777204764,
     "relativePath": "Jogo.fire"
   },
   "609766a9-58bf-481f-a4df-d35a0f6eb813": {
-    "asset": 1515679355424,
+    "asset": 1515772145803,
     "meta": 1512991334000,
     "relativePath": "Prefabs"
   },
@@ -385,7 +385,7 @@
     "relativePath": "Prefabs\\Tiro.prefab"
   },
   "66dfbd53-7703-4d8d-995e-f4137a9a904e": {
-    "asset": 1515679640381,
+    "asset": 1515771925114,
     "meta": 1512991334000,
     "relativePath": "Scripts"
   },
@@ -473,11 +473,6 @@
     "asset": 1513169720000,
     "meta": 1515676459289,
     "relativePath": "Scripts\\Teclado.js"
-  },
-  "60d0f08b-9001-4846-bdbc-e2326328582d": {
-    "asset": 1513173642000,
-    "meta": 1515676459135,
-    "relativePath": "Scripts\\GeradorDeInimigos.js"
   },
   "ef119131-be78-44fe-9e8c-819d8ab8d115": {
     "asset": 1515072672000,
@@ -770,7 +765,7 @@
     "relativePath": "Scripts\\ControleDeAnimacao.js"
   },
   "51fe6626-b105-4b3c-a6c2-26ad59e63e19": {
-    "asset": 1515677523483,
+    "asset": 1515758944732,
     "meta": 1515677303575,
     "relativePath": "Animacoes\\Chefe"
   },
@@ -905,19 +900,14 @@
     "relativePath": "Scripts\\KitMedico.js"
   },
   "d3299227-3ff8-40a0-a464-eadc34169210": {
-    "asset": 1515771293038,
-    "meta": 1515771338580,
+    "asset": 1515773827043,
+    "meta": 1515774274214,
     "relativePath": "Scripts\\Jogador.js"
   },
   "05038faf-d87f-42f5-b0da-e8b4aa3c42c6": {
     "asset": 1515773587799,
     "meta": 1515773587853,
     "relativePath": "Prefabs\\KitMedico.prefab"
-  },
-  "db00ef83-28a7-4f8e-9ee9-6a20ef1db437": {
-    "asset": 1515772177333,
-    "meta": 1515772183968,
-    "relativePath": "Scripts\\Inimigo.js"
   },
   "68d5fd23-12e4-4c0a-bc2c-61974d6d2311": {
     "asset": 1515772443652,
@@ -928,5 +918,20 @@
     "asset": 1515773544929,
     "meta": 1515773544961,
     "relativePath": "particle_texture.plist"
+  },
+  "60d0f08b-9001-4846-bdbc-e2326328582d": {
+    "asset": 1515777166043,
+    "meta": 1515777167038,
+    "relativePath": "Scripts\\GeradorDeInimigos.js"
+  },
+  "73105894-fff8-48b3-bb71-f8924802c410": {
+    "asset": 1515778255796,
+    "meta": 1515778267700,
+    "relativePath": "Scripts\\LimitadorDeZumbis.js"
+  },
+  "db00ef83-28a7-4f8e-9ee9-6a20ef1db437": {
+    "asset": 1515778493888,
+    "meta": 1515778497581,
+    "relativePath": "Scripts\\Inimigo.js"
   }
 }

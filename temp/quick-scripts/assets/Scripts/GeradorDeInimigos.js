@@ -11,7 +11,8 @@ cc.Class({
         tempoParaGerar: cc.Float,
         inimigoPrefab: cc.Prefab,
         raio: cc.Float,
-        _distanciaMinima: cc.Float
+        _distanciaMinima: cc.Float,
+        _limitador: cc.Component
     },
 
     onLoad: function onLoad() {
@@ -19,13 +20,17 @@ cc.Class({
         var resolucao = cc.director.getVisibleSize();
         var metadeDaLargura = resolucao.width / 2;
         this._distanciaMinima = metadeDaLargura;
+        cc.director.getScene().on("receberOLimitadorDeZumbis", this.receberLimitador, this);
     },
+
+    receberLimitador: function receberLimitador(evento) {
+        this._limitador = evento.getUserData().limitador;
+    },
+
     gerar: function gerar() {
         if (this.possoGerar()) {
             var posicao = this.calcularPosicao();
-            var zumbi = cc.instantiate(this.inimigoPrefab);
-            zumbi.parent = this.node.parent;
-            zumbi.position = posicao;
+            this._limitador.novoZumbi(this.node.parent, posicao);
         }
     },
 

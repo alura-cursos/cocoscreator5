@@ -28,18 +28,28 @@ cc.Class({
 
         this.alvo = cc.find("Personagens/Personagem");
         this.node.on("SofrerDano", this.sofrerDano, this);
-        
+        this.inicializa();
+    },
+
+    reuse : function(){
+        this.inicializa();
+    },
+
+    inicializa : function(){
         this._tempoRestanteParaVagar = this.tempoVagar;
         this.direcaoVagar = cc.Vec2.UP;
 
         this._vidaAtual = this.vidaMaxima;
         this._atacando = false;
         this._vivo = true;
+
+        this.node.emit("atualizaVida", {vidaAtual : this._vidaAtual,
+                                        vidaMaxima : this.vidaMaxima});
     },
 
     update: function (deltaTime) {
         if(this._vivo && !this._atacando){
-            
+
             this._tempoRestanteParaVagar -= deltaTime;
             let direcaoAlvo = this.alvo.position.sub(this.node.position);
             let distancia = direcaoAlvo.mag();
@@ -66,7 +76,7 @@ cc.Class({
     },
     atacar : function(direcao){
         this.alvo.emit("SofreDano", {dano : this.dano});
-        
+
         this._atacando = false;
     },
 
@@ -86,19 +96,20 @@ cc.Class({
             this.morrer();
         }
     },
-    
+
     morrer : function(){
         this._controleAnimacao.mudaAnimacao(cc.Vec2.UP.mul(-1), "Morte");
         this._vivo = false;
-       
+
 
     },
-    
+
     destruir :function(){
         this.node.emit("SoltarItem");
-         let eventoMorte = new cc.Event.EventCustom("ZumbiMorreu", true);
+        let eventoMorte = new cc.Event.EventCustom("ZumbiMorreu", true);
+        eventoMorte.setUserData(this.node);
         this.node.dispatchEvent(eventoMorte);
-         this.node.destroy();
+
     }
 
 

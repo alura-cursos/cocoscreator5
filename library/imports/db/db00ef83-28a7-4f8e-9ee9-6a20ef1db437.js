@@ -33,13 +33,23 @@ cc.Class({
 
         this.alvo = cc.find("Personagens/Personagem");
         this.node.on("SofrerDano", this.sofrerDano, this);
+        this.inicializa();
+    },
 
+    reuse: function reuse() {
+        this.inicializa();
+    },
+
+    inicializa: function inicializa() {
         this._tempoRestanteParaVagar = this.tempoVagar;
         this.direcaoVagar = cc.Vec2.UP;
 
         this._vidaAtual = this.vidaMaxima;
         this._atacando = false;
         this._vivo = true;
+
+        this.node.emit("atualizaVida", { vidaAtual: this._vidaAtual,
+            vidaMaxima: this.vidaMaxima });
     },
 
     update: function update(deltaTime) {
@@ -97,8 +107,8 @@ cc.Class({
     destruir: function destruir() {
         this.node.emit("SoltarItem");
         var eventoMorte = new cc.Event.EventCustom("ZumbiMorreu", true);
+        eventoMorte.setUserData(this.node);
         this.node.dispatchEvent(eventoMorte);
-        this.node.destroy();
     }
 
 });
