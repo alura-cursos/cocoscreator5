@@ -370,8 +370,8 @@
     "relativePath": "Imagens\\Tiro.png"
   },
   "b1b819d6-754e-4a9b-a9d2-8a24bff4c720": {
-    "asset": 1515777204736,
-    "meta": 1515777204764,
+    "asset": 1515781714986,
+    "meta": 1515781715025,
     "relativePath": "Jogo.fire"
   },
   "609766a9-58bf-481f-a4df-d35a0f6eb813": {
@@ -385,7 +385,7 @@
     "relativePath": "Prefabs\\Tiro.prefab"
   },
   "66dfbd53-7703-4d8d-995e-f4137a9a904e": {
-    "asset": 1515771925114,
+    "asset": 1515776650170,
     "meta": 1512991334000,
     "relativePath": "Scripts"
   },
@@ -501,7 +501,7 @@
   },
   "cf945e6e-3a30-44ed-9794-5c514638ee61": {
     "asset": 1515169592000,
-    "meta": 1515676459448,
+    "meta": 1515780591374,
     "relativePath": "Atlas\\InvasaoZumbi-00.plist"
   },
   "aeaa8ae3-409f-413f-b774-59b096eb5196": {
@@ -933,5 +933,45 @@
     "asset": 1515778493888,
     "meta": 1515778497581,
     "relativePath": "Scripts\\Inimigo.js"
+  },
+  "c5a7568c-85e6-456d-8e73-dcbd784a17b9": {
+    "asset": 1515779881358,
+    "meta": 1515779881374,
+    "relativePath": "Prefabs\\Cenario\\Barril.prefab"
+  },
+  "20b069df-483e-4228-b8ad-10f8b3418a0f": {
+    "asset": 1515780155168,
+    "meta": 1515780155197,
+    "relativePath": "Prefabs\\Cenario\\Tanque.prefab"
+  },
+  "fcda6bfd-969b-4cec-8a0d-89bcae53ca7b": {
+    "asset": 1515780235936,
+    "meta": 1515780235947,
+    "relativePath": "Prefabs\\Cenario"
+  },
+  "bca5643a-52be-496a-8b7b-cafa11d6f51a": {
+    "asset": 1515780255338,
+    "meta": 1515780255384,
+    "relativePath": "Prefabs\\Cenario\\CaixasGrandesDireita.prefab"
+  },
+  "b784031f-787e-445d-9f84-6824d2678050": {
+    "asset": 1515780257602,
+    "meta": 1515780257629,
+    "relativePath": "Prefabs\\Cenario\\CaixasGrandesFrente.prefab"
+  },
+  "64d5fa70-c9a7-41cb-91e5-e1aa617d9689": {
+    "asset": 1515780260164,
+    "meta": 1515780260205,
+    "relativePath": "Prefabs\\Cenario\\CaixasGrandesTras.prefab"
+  },
+  "249cdb0f-4343-4518-b58f-98d231ec0cec": {
+    "asset": 1515780352580,
+    "meta": 1515780352621,
+    "relativePath": "Prefabs\\Cenario\\PosteDeLuzEsquerda.prefab"
+  },
+  "544bce88-8fc7-40a0-b743-b24f955399c8": {
+    "asset": 1515780355683,
+    "meta": 1515780355715,
+    "relativePath": "Prefabs\\Cenario\\PosteDeLuzDireita.prefab"
   }
 }
