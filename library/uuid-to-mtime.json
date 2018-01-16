@@ -220,12 +220,12 @@
     "relativePath": "prefab\\webview.prefab"
   },
   "60b72238-1630-4381-9d85-ea738e1881f8": {
-    "asset": 1515773854178,
+    "asset": 1515677306459,
     "meta": 1512991334000,
     "relativePath": "Animacoes"
   },
   "3264c940-0da5-4fee-befe-188a8170db54": {
-    "asset": 1515773854147,
+    "asset": 1515675219944,
     "meta": 1512991334000,
     "relativePath": "Animacoes\\Inimigo"
   },
@@ -270,7 +270,7 @@
     "relativePath": "Animacoes\\Inimigo\\Andar\\AndarEsquerdaCima.anim"
   },
   "1d52503c-ec71-46db-a6b8-1769c14c6bd2": {
-    "asset": 1515773854225,
+    "asset": 1515675220350,
     "meta": 1512991334000,
     "relativePath": "Animacoes\\Perosnagem"
   },
@@ -355,7 +355,7 @@
     "relativePath": "Animacoes\\Perosnagem\\ParadoEsquerdaBaixo.anim"
   },
   "139bb71b-a772-4f24-b06c-1a85bad78e13": {
-    "asset": 1515773854412,
+    "asset": 1515675225023,
     "meta": 1512991334000,
     "relativePath": "Imagens"
   },
@@ -370,12 +370,12 @@
     "relativePath": "Imagens\\Tiro.png"
   },
   "b1b819d6-754e-4a9b-a9d2-8a24bff4c720": {
-    "asset": 1515774148841,
-    "meta": 1515774148877,
+    "asset": 1515773821280,
+    "meta": 1515773821316,
     "relativePath": "Jogo.fire"
   },
   "609766a9-58bf-481f-a4df-d35a0f6eb813": {
-    "asset": 1515773854428,
+    "asset": 1515679355424,
     "meta": 1512991334000,
     "relativePath": "Prefabs"
   },
@@ -385,13 +385,13 @@
     "relativePath": "Prefabs\\Tiro.prefab"
   },
   "66dfbd53-7703-4d8d-995e-f4137a9a904e": {
-    "asset": 1515773854584,
+    "asset": 1515679640381,
     "meta": 1512991334000,
     "relativePath": "Scripts"
   },
   "65bf74ea-f0ad-46af-84a6-e29f55a14ec1": {
-    "asset": 1515774039275,
-    "meta": 1515774039292,
+    "asset": 1515772494979,
+    "meta": 1515772495000,
     "relativePath": "Prefabs\\Zumbi.prefab"
   },
   "7fefff2d-b400-4ab6-bced-09c9b8bd7d30": {
@@ -440,7 +440,7 @@
     "relativePath": "Audio\\SomTiro.ogg"
   },
   "124b8a91-2d1c-4788-b241-2929b170f2b2": {
-    "asset": 1515773854397,
+    "asset": 1515675224992,
     "meta": 1513084732000,
     "relativePath": "Audio"
   },
@@ -500,7 +500,7 @@
     "relativePath": "Scripts\\BarraDeVidaInimigo.js"
   },
   "fc45f1fd-a59b-47cb-ad96-b2aabf6b1289": {
-    "asset": 1515773854381,
+    "asset": 1515675224413,
     "meta": 1515169594000,
     "relativePath": "Atlas"
   },
@@ -715,12 +715,12 @@
     "relativePath": "Atlas\\InvasaoZumbi-09.png"
   },
   "3dca5392-e46e-4c70-8bbe-8a4ea12e3177": {
-    "asset": 1515773854147,
+    "asset": 1515675219944,
     "meta": 1515172970000,
     "relativePath": "Animacoes\\Inimigo\\Andar"
   },
   "e366f2d1-f1e0-4371-bbfa-d5ff20b4b43c": {
-    "asset": 1515773854178,
+    "asset": 1515675220069,
     "meta": 1515172980000,
     "relativePath": "Animacoes\\Inimigo\\Atacar"
   },
@@ -770,12 +770,12 @@
     "relativePath": "Scripts\\ControleDeAnimacao.js"
   },
   "51fe6626-b105-4b3c-a6c2-26ad59e63e19": {
-    "asset": 1515773854084,
+    "asset": 1515677523483,
     "meta": 1515677303575,
     "relativePath": "Animacoes\\Chefe"
   },
   "15510abd-ab65-4b36-8647-40d9aaa79fa2": {
-    "asset": 1515773854084,
+    "asset": 1515677411571,
     "meta": 1515677326036,
     "relativePath": "Animacoes\\Chefe\\Andar"
   },
@@ -820,7 +820,7 @@
     "relativePath": "Animacoes\\Chefe\\Andar\\AndarEsquerdaBaixo.anim"
   },
   "45c831bd-8f26-4cfd-b2ec-4212757c4f35": {
-    "asset": 1515773854116,
+    "asset": 1515677518491,
     "meta": 1515677420334,
     "relativePath": "Animacoes\\Chefe\\Atacar"
   },
@@ -870,8 +870,8 @@
     "relativePath": "Animacoes\\Chefe\\Parado.anim"
   },
   "398105b8-a02c-43b7-8132-4eb99a1ac196": {
-    "asset": 1515774025826,
-    "meta": 1515774025845,
+    "asset": 1515772515378,
+    "meta": 1515772515400,
     "relativePath": "Prefabs\\Chefe.prefab"
   },
   "78533bf5-78af-4f07-80c6-db9a33d49770": {
@@ -899,14 +899,34 @@
     "meta": 1515759334348,
     "relativePath": "Animacoes\\Inimigo\\MorteBaixo.anim"
   },
+  "596d145c-4169-4405-b16b-555b02bf925c": {
+    "asset": 1515764910805,
+    "meta": 1515764916585,
+    "relativePath": "Scripts\\KitMedico.js"
+  },
   "d3299227-3ff8-40a0-a464-eadc34169210": {
-    "asset": 1515176714000,
-    "meta": 1515774008183,
+    "asset": 1515771293038,
+    "meta": 1515771338580,
     "relativePath": "Scripts\\Jogador.js"
   },
+  "05038faf-d87f-42f5-b0da-e8b4aa3c42c6": {
+    "asset": 1515773587799,
+    "meta": 1515773587853,
+    "relativePath": "Prefabs\\KitMedico.prefab"
+  },
   "db00ef83-28a7-4f8e-9ee9-6a20ef1db437": {
-    "asset": 1515774123790,
-    "meta": 1515774144284,
+    "asset": 1515772177333,
+    "meta": 1515772183968,
     "relativePath": "Scripts\\Inimigo.js"
+  },
+  "68d5fd23-12e4-4c0a-bc2c-61974d6d2311": {
+    "asset": 1515772443652,
+    "meta": 1515772445069,
+    "relativePath": "Scripts\\SoltarItem.js"
+  },
+  "0b99e29d-e63a-4c2b-9e01-c05725b73302": {
+    "asset": 1515773544929,
+    "meta": 1515773544961,
+    "relativePath": "particle_texture.plist"
   }
 }

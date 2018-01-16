@@ -91,15 +91,16 @@ cc.Class({
 
     morrer: function morrer() {
         this._controleAnimacao.mudaAnimacao(cc.Vec2.UP.mul(-1), "Morte");
-        var eventoMorte = new cc.Event.EventCustom("ZumbiMorreu", true);
         this._vivo = false;
     },
 
     destruir: function destruir() {
-
+        this.node.emit("SoltarItem");
+        var eventoMorte = new cc.Event.EventCustom("ZumbiMorreu", true);
         this.node.dispatchEvent(eventoMorte);
         this.node.destroy();
     }
+
 });
 
 cc._RF.pop();

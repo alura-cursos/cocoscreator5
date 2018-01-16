@@ -20,7 +20,9 @@ cc.Class({
         _camera: cc.Node,
         _posicaoArma: cc.Node,
         _audioTiro: cc.AudioSource,
-        _direcaoMouse: cc.Vec2
+        _direcaoMouse: cc.Vec2,
+        _eventoAtualizaVida: cc.Event.EventCustom,
+        _jogoAcabou: cc.Event.EventCustom
     },
 
     onLoad: function onLoad() {
@@ -33,15 +35,27 @@ cc.Class({
         this._canvas.on("mousemove", this.calcularDirecaoMouse, this);
         this._camera = cc.find("Camera");
         this.node.on("SofreDano", this.sofrerDano, this);
+        this.node.on("RecuperarVida", this.recuperarVida, this);
         this._vidaAtual = this.vidaMaxima;
         this._posicaoArma = this.node.children[0];
         this._direcaoMouse = cc.Vec2.UP;
+        this._eventoAtualizaVida = new cc.Event.EventCustom("JogadoraPerdeuVida", true);
+        this._jogoAcabou = new cc.Event.EventCustom("JogoAcabou", true);
     },
 
     update: function update(deltaTime) {
+
+        this.andar();
+        this.verficarTeclado();
+        this.atualizaAnimacao();
+    },
+
+    andar: function andar() {
         this._movimentacao.setDirecao(this._direcao);
         this._movimentacao.andarPraFrente();
+    },
 
+    verficarTeclado: function verficarTeclado() {
         this._direcao = cc.Vec2.ZERO;
 
         if (Teclado.estaPressionada(cc.KEY.a)) {
@@ -57,8 +71,6 @@ cc.Class({
         if (Teclado.estaPressionada(cc.KEY.w)) {
             this._direcao.y += 1;
         }
-
-        this.atualizaAnimacao();
     },
 
     atualizaAnimacao: function atualizaAnimacao() {
@@ -67,13 +79,24 @@ cc.Class({
 
     sofrerDano: function sofrerDano(evento) {
         this._vidaAtual -= evento.detail.dano;
-        var eventoPerdeVida = new cc.Event.EventCustom("JogadoraPerdeuVida", true);
-        eventoPerdeVida.setUserData({ vidaAtual: this._vidaAtual, vidaMaxima: this.vidaMaxima });
-        this.node.dispatchEvent(eventoPerdeVida);
+
+        this.disparaEventoGlobal(this._eventoAtualizaVida, { vidaAtual: this._vidaAtual, vidaMaxima: this.vidaMaxima });
+
         if (this._vidaAtual < 0) {
-            var jogoAcabou = new cc.Event.EventCustom("JogoAcabou", true);
-            this.node.dispatchEvent(jogoAcabou);
+            this.disparaEventoGlobal(this._jogoAcabou);
         }
+    },
+
+    recuperarVida: function recuperarVida(evento) {
+        this._vidaAtual += parseFloat(evento.detail.recuperar);
+        this._vidaAtual = Math.min(this._vidaAtual, this.vidaMaxima);
+
+        this.disparaEventoGlobal(this._eventoAtualizaVida, { vidaAtual: this._vidaAtual, vidaMaxima: this.vidaMaxima });
+    },
+
+    disparaEventoGlobal: function disparaEventoGlobal(evento, informacoes) {
+        evento.setUserData(informacoes);
+        this.node.dispatchEvent(evento);
     },
 
     estadoAtual: function estadoAtual(event) {
