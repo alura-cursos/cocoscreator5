@@ -1,0 +1,26 @@
+{
+  "appKey": "",
+  "appSecret": "",
+  "excludeScenes": [],
+  "includeAnySDK": false,
+  "includeSDKBox": false,
+  "inlineSpriteFrames": true,
+  "inlineSpriteFrames_native": true,
+  "jailbreakPlatform": false,
+  "md5Cache": false,
+  "mergeStartScene": false,
+  "oauthLoginServer": "",
+  "optimizeHotUpdate": false,
+  "orientation": {
+    "landscapeLeft": true,
+    "landscapeRight": true,
+    "portrait": false,
+    "upsideDown": false
+  },
+  "packageName": "org.cocos2d.projeto",
+  "privateKey": "",
+  "renderMode": "0",
+  "startScene": "2eaae05d-75c6-4f9f-a3e0-e63395c2ad33",
+  "title": "InvasaoZumbiCocos",
+  "webOrientation": "auto"
+}

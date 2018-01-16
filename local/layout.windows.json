@@ -18,7 +18,7 @@
                 "children": [
                   "hierarchy"
                 ],
-                "height": 349,
+                "height": 226,
                 "type": "panel",
                 "width": 204
               },
@@ -27,7 +27,7 @@
                 "children": [
                   "assets"
                 ],
-                "height": 226,
+                "height": 349,
                 "type": "panel",
                 "width": 204
               }
@@ -57,7 +57,7 @@
                 "width": 760
               },
               {
-                "active": 0,
+                "active": 2,
                 "children": [
                   "console",
                   "node-library",
@@ -88,9 +88,9 @@
   },
   "panels": {
     "timeline.event": {
-      "x": 329,
-      "y": 103,
-      "width": 416,
+      "x": 249,
+      "y": 96,
+      "width": 729,
       "height": 439
     },
     "sprite-editor": {
@@ -98,6 +98,12 @@
       "y": 60,
       "width": 516,
       "height": 539
+    },
+    "builder": {
+      "x": 374,
+      "y": 0,
+      "width": 516,
+      "height": 690
     }
   }
 }

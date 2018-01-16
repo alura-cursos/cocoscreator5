@@ -370,12 +370,12 @@
     "relativePath": "Imagens\\Tiro.png"
   },
   "b1b819d6-754e-4a9b-a9d2-8a24bff4c720": {
-    "asset": 1515781714986,
-    "meta": 1515781715025,
+    "asset": 1515787200646,
+    "meta": 1515787200700,
     "relativePath": "Jogo.fire"
   },
   "609766a9-58bf-481f-a4df-d35a0f6eb813": {
-    "asset": 1515772145803,
+    "asset": 1515780245767,
     "meta": 1512991334000,
     "relativePath": "Prefabs"
   },
@@ -457,7 +457,7 @@
   "489662b4-4154-461e-bb60-e658ddc9c4b2": {
     "asset": 1513086938000,
     "meta": 1513086938000,
-    "relativePath": "Audio\\CoraçãoBatendo.wav"
+    "relativePath": "Audio\\CoracaoBatendo.wav"
   },
   "f2b06ea0-d4e0-45e7-861c-80d631bc9cb4": {
     "asset": 1513249766000,
@@ -945,7 +945,7 @@
     "relativePath": "Prefabs\\Cenario\\Tanque.prefab"
   },
   "fcda6bfd-969b-4cec-8a0d-89bcae53ca7b": {
-    "asset": 1515780235936,
+    "asset": 1515780348305,
     "meta": 1515780235947,
     "relativePath": "Prefabs\\Cenario"
   },
@@ -973,5 +973,25 @@
     "asset": 1515780355683,
     "meta": 1515780355715,
     "relativePath": "Prefabs\\Cenario\\PosteDeLuzDireita.prefab"
+  },
+  "2eaae05d-75c6-4f9f-a3e0-e63395c2ad33": {
+    "asset": 1515784705921,
+    "meta": 1515784705934,
+    "relativePath": "Intro.fire"
+  },
+  "be11ebc2-40ee-4ecc-9670-9a4b79df3efe": {
+    "asset": 1515782172446,
+    "meta": 1515782172579,
+    "relativePath": "Imagens\\LogoAlura.png"
+  },
+  "edd5b331-db7e-4ccd-9a4e-ab2ce0caa9c5": {
+    "asset": 1515782449754,
+    "meta": 1515782449785,
+    "relativePath": "Animacoes\\LogoAparecendo.anim"
+  },
+  "d4eaa953-b752-4a58-a903-dabb2e90c7b0": {
+    "asset": 1515782368694,
+    "meta": 1515782378533,
+    "relativePath": "Scripts\\CarregarCena.js"
   }
 }
